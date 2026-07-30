@@ -1,0 +1,3 @@
+2025-10-15 22:44:31.028 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-10-15 22:44:31.144 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-10-15 22:44:54.195 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CriminalDAO - Criminal created with ID: 7

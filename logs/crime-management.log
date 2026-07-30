@@ -1,0 +1,127 @@
+2026-03-30 00:08:34.353 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-30 00:08:34.655 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-30 00:08:34.663 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database is new or schema is incompatible, initializing schema...
+2026-03-30 00:08:34.664 [AWT-EventQueue-0] DEBUG c.c.util.DatabaseConnection - Converted ENUM types to VARCHAR in SQL resource 'schema.sql'. Transformed length: 8045 -> 7444
+2026-03-30 00:08:34.691 [AWT-EventQueue-0] DEBUG c.c.util.DatabaseConnection - Converted ENUM types to VARCHAR in SQL resource 'sample_data.sql'. Transformed length: 18230 -> 18230
+2026-03-30 00:08:34.732 [AWT-EventQueue-0] WARN  c.c.util.DatabaseConnection - SQLException while executing SQL resource sample_data.sql: Column "description" not found; SQL statement:
+
+INSERT INTO cases (case_number, fir_id, case_title, description, priority, status, assigned_officer_id, station_id, is_public, verdict_text) VALUES
+('CASE/TVM/1984/001', NULL, 'Chacko Murder Case', 'Investigation regarding the murder of Chacko to fake Sukumara Kurup''s death.', 'HIGH', 'Under Investigation', (SELECT officer_id FROM officers WHERE badge_number = 'KPinsp001'), (SELECT station_id FROM police_stations WHERE name = 'Cantonment PS'), FALSE, NULL),
+('CASE/EKM/2017/045', NULL, 'Actress Abduction Case', 'High profile abduction and assault case involving hired criminals.', 'CRITICAL', 'Under Trial', (SELECT officer_id FROM officers WHERE badge_number = 'KPinsp002'), (SELECT station_id FROM police_stations WHERE name = 'Fort Kochi PS'), TRUE, 'Pending final court hearing.'),
+('CASE/TVM/1986/012', NULL, 'Ripper Homicides', 'Series of bludgeoning murders committed across the district.', 'HIGH', 'Closed', (SELECT officer_id FROM officers WHERE badge_number = 'KPinsp001'), (SELECT station_id FROM police_stations WHERE name = 'Vanchiyoor PS'), TRUE, 'Convicted and sentenced to death.') [42122-214]
+2026-03-30 00:08:34.809 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=1
+2026-03-30 00:08:34.876 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=2
+2026-03-30 00:08:34.945 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=3
+2026-03-30 00:08:35.013 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=4
+2026-03-30 00:08:35.080 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=5
+2026-03-30 00:08:35.148 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=6
+2026-03-30 00:08:35.217 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=7
+2026-03-30 00:08:35.282 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=8
+2026-03-30 00:08:35.350 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=9
+2026-03-30 00:08:35.417 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=10
+2026-03-30 00:08:35.417 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table firs contains all expected columns.
+2026-03-30 00:08:35.417 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table cases contains all expected columns.
+2026-03-30 00:08:35.417 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table officers contains all expected columns.
+2026-03-30 00:08:35.417 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table complaints contains all expected columns.
+2026-03-30 00:08:35.417 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table audit_logs contains all expected columns.
+2026-03-30 00:08:35.418 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table leave_requests contains all expected columns.
+2026-03-30 00:08:35.418 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table police_stations contains all expected columns.
+2026-03-30 00:08:35.418 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Schema and sample data loaded into embedded H2 database.
+2026-03-30 00:14:45.642 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-30 00:14:45.886 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-30 00:14:45.894 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database tables already exist, skipping schema initialization.
+2026-03-30 00:23:35.304 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-30 00:23:35.514 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-30 00:23:35.520 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database is new or schema is incompatible, initializing schema...
+2026-03-30 00:23:35.522 [AWT-EventQueue-0] DEBUG c.c.util.DatabaseConnection - Converted ENUM types to VARCHAR in SQL resource 'schema.sql'. Transformed length: 8045 -> 7444
+2026-03-30 00:23:35.549 [AWT-EventQueue-0] DEBUG c.c.util.DatabaseConnection - Converted ENUM types to VARCHAR in SQL resource 'sample_data.sql'. Transformed length: 20227 -> 20227
+2026-03-30 00:23:35.601 [AWT-EventQueue-0] WARN  c.c.util.DatabaseConnection - SQLException while executing SQL resource sample_data.sql: Column "description" not found; SQL statement:
+
+INSERT INTO cases (case_number, fir_id, case_title, description, priority, status, assigned_officer_id, station_id, is_public, verdict_text) VALUES
+('CASE/TVM/1984/001', NULL, 'Chacko Murder Case', 'Investigation regarding the murder of Chacko to fake Sukumara Kurup''s death.', 'HIGH', 'Under Investigation', (SELECT officer_id FROM officers WHERE badge_number = 'KPinsp001'), (SELECT station_id FROM police_stations WHERE name = 'Fort PS'), FALSE, NULL),
+('CASE/EKM/2017/045', NULL, 'Actress Abduction Case', 'High profile abduction and assault case involving hired criminals.', 'CRITICAL', 'Under Trial', (SELECT officer_id FROM officers WHERE badge_number = 'KPinsp002'), (SELECT station_id FROM police_stations WHERE name = 'Fort Kochi PS'), TRUE, 'Pending final court hearing.'),
+('CASE/TVM/1986/012', NULL, 'Ripper Homicides', 'Series of bludgeoning murders committed across the district.', 'HIGH', 'Closed', (SELECT officer_id FROM officers WHERE badge_number = 'KPinsp001'), (SELECT station_id FROM police_stations WHERE name = 'Peroorkada PS'), TRUE, 'Convicted and sentenced to death.'),
+('CASE/KOZ/2019/088', NULL, 'Koodathayi Cyanide Murders', 'Series of six mysterious deaths in a family over 14 years.', 'CRITICAL', 'Under Investigation', (SELECT officer_id FROM officers WHERE badge_number = 'KPinsp002'), (SELECT station_id FROM police_stations WHERE name = 'Fort Kochi PS'), TRUE, NULL) [42122-214]
+2026-03-30 00:23:35.677 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=1
+2026-03-30 00:23:35.743 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=2
+2026-03-30 00:23:35.811 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=3
+2026-03-30 00:23:35.877 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=4
+2026-03-30 00:23:35.946 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=5
+2026-03-30 00:23:36.013 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=6
+2026-03-30 00:23:36.081 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=7
+2026-03-30 00:23:36.149 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=8
+2026-03-30 00:23:36.217 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=9
+2026-03-30 00:23:36.286 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=10
+2026-03-30 00:23:36.353 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=11
+2026-03-30 00:23:36.423 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=12
+2026-03-30 00:23:36.490 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=13
+2026-03-30 00:23:36.559 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=14
+2026-03-30 00:23:36.560 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table firs contains all expected columns.
+2026-03-30 00:23:36.560 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table cases contains all expected columns.
+2026-03-30 00:23:36.560 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table officers contains all expected columns.
+2026-03-30 00:23:36.560 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table complaints contains all expected columns.
+2026-03-30 00:23:36.560 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table audit_logs contains all expected columns.
+2026-03-30 00:23:36.561 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table leave_requests contains all expected columns.
+2026-03-30 00:23:36.561 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table police_stations contains all expected columns.
+2026-03-30 00:23:36.561 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Schema and sample data loaded into embedded H2 database.
+2026-03-30 00:29:56.518 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-30 00:29:56.725 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-30 00:29:56.731 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database is new or schema is incompatible, initializing schema...
+2026-03-30 00:29:56.733 [AWT-EventQueue-0] DEBUG c.c.util.DatabaseConnection - Converted ENUM types to VARCHAR in SQL resource 'schema.sql'. Transformed length: 8111 -> 7487
+2026-03-30 00:29:56.760 [AWT-EventQueue-0] DEBUG c.c.util.DatabaseConnection - Converted ENUM types to VARCHAR in SQL resource 'sample_data.sql'. Transformed length: 20227 -> 20227
+2026-03-30 00:29:56.809 [AWT-EventQueue-0] WARN  c.c.util.DatabaseConnection - SQLException while executing SQL resource sample_data.sql: Column "description" not found; SQL statement:
+
+INSERT INTO cases (case_number, fir_id, case_title, description, priority, status, assigned_officer_id, station_id, is_public, verdict_text) VALUES
+('CASE/TVM/1984/001', NULL, 'Chacko Murder Case', 'Investigation regarding the murder of Chacko to fake Sukumara Kurup''s death.', 'HIGH', 'Under Investigation', (SELECT officer_id FROM officers WHERE badge_number = 'KPinsp001'), (SELECT station_id FROM police_stations WHERE name = 'Fort PS'), FALSE, NULL),
+('CASE/EKM/2017/045', NULL, 'Actress Abduction Case', 'High profile abduction and assault case involving hired criminals.', 'CRITICAL', 'Under Trial', (SELECT officer_id FROM officers WHERE badge_number = 'KPinsp002'), (SELECT station_id FROM police_stations WHERE name = 'Fort Kochi PS'), TRUE, 'Pending final court hearing.'),
+('CASE/TVM/1986/012', NULL, 'Ripper Homicides', 'Series of bludgeoning murders committed across the district.', 'HIGH', 'Closed', (SELECT officer_id FROM officers WHERE badge_number = 'KPinsp001'), (SELECT station_id FROM police_stations WHERE name = 'Peroorkada PS'), TRUE, 'Convicted and sentenced to death.'),
+('CASE/KOZ/2019/088', NULL, 'Koodathayi Cyanide Murders', 'Series of six mysterious deaths in a family over 14 years.', 'CRITICAL', 'Under Investigation', (SELECT officer_id FROM officers WHERE badge_number = 'KPinsp002'), (SELECT station_id FROM police_stations WHERE name = 'Fort Kochi PS'), TRUE, NULL) [42122-214]
+2026-03-30 00:29:56.890 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=1
+2026-03-30 00:29:56.958 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=2
+2026-03-30 00:29:57.026 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=3
+2026-03-30 00:29:57.092 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=4
+2026-03-30 00:29:57.162 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=5
+2026-03-30 00:29:57.229 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=6
+2026-03-30 00:29:57.297 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=7
+2026-03-30 00:29:57.366 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=8
+2026-03-30 00:29:57.435 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=9
+2026-03-30 00:29:57.505 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=10
+2026-03-30 00:29:57.574 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=11
+2026-03-30 00:29:57.642 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=12
+2026-03-30 00:29:57.709 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=13
+2026-03-30 00:29:57.775 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=14
+2026-03-30 00:29:57.776 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table firs contains all expected columns.
+2026-03-30 00:29:57.776 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table cases contains all expected columns.
+2026-03-30 00:29:57.776 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table officers contains all expected columns.
+2026-03-30 00:29:57.776 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table complaints contains all expected columns.
+2026-03-30 00:29:57.776 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table audit_logs contains all expected columns.
+2026-03-30 00:29:57.776 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table leave_requests contains all expected columns.
+2026-03-30 00:29:57.776 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table police_stations contains all expected columns.
+2026-03-30 00:29:57.776 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Schema and sample data loaded into embedded H2 database.
+2026-03-30 21:03:02.637 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-30 21:03:02.917 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-30 21:03:02.925 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database tables already exist, skipping schema initialization.
+2026-03-30 21:18:48.847 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-30 21:18:49.155 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-30 21:18:49.163 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database tables already exist, skipping schema initialization.
+2026-03-30 21:28:13.791 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-30 21:28:14.057 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-30 21:28:14.065 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database tables already exist, skipping schema initialization.
+2026-03-30 21:41:52.484 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-30 21:41:52.752 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-30 21:41:52.759 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database tables already exist, skipping schema initialization.
+2026-03-30 21:45:05.117 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-30 21:45:05.436 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-30 21:45:05.445 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database tables already exist, skipping schema initialization.
+2026-03-30 22:08:54.034 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-30 22:08:54.342 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-30 22:08:54.350 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database tables already exist, skipping schema initialization.
+2026-03-30 22:15:58.703 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-30 22:15:58.972 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-30 22:15:58.979 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database tables already exist, skipping schema initialization.
+2026-03-30 22:41:08.923 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-30 22:41:09.244 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-30 22:41:09.251 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database tables already exist, skipping schema initialization.
+2026-03-30 22:45:22.860 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-30 22:45:23.113 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-30 22:45:23.120 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database tables already exist, skipping schema initialization.

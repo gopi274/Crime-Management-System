@@ -1,0 +1,28 @@
+2026-03-11 22:05:26.673 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-11 22:05:26.765 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-11 22:07:27.461 [com.crimemanagement.util.PasswordFixer.main()] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-11 22:07:27.572 [com.crimemanagement.util.PasswordFixer.main()] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-11 22:10:53.339 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-11 22:10:53.419 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-11 22:13:06.520 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-11 22:13:06.603 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-11 22:15:44.916 [com.crimemanagement.util.AuthDiagnostics.main()] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-11 22:15:45.007 [com.crimemanagement.util.AuthDiagnostics.main()] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-11 22:16:36.331 [com.crimemanagement.util.ResetAdminPassword.main()] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-11 22:16:36.472 [com.crimemanagement.util.ResetAdminPassword.main()] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-11 22:16:52.844 [com.crimemanagement.util.AuthDiagnostics.main()] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-11 22:16:52.923 [com.crimemanagement.util.AuthDiagnostics.main()] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-11 22:37:30.021 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-11 22:37:30.120 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-11 23:13:41.719 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-11 23:13:41.813 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-11 23:22:56.362 [com.crimemanagement.util.FetchAllData.main()] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-11 23:22:56.509 [com.crimemanagement.util.FetchAllData.main()] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-11 23:39:34.844 [com.crimemanagement.util.DataMigrator.main()] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-11 23:39:34.940 [com.crimemanagement.util.DataMigrator.main()] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-11 23:40:34.823 [com.crimemanagement.util.DataMigrator.main()] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-11 23:40:34.900 [com.crimemanagement.util.DataMigrator.main()] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-11 23:41:35.081 [com.crimemanagement.util.DataMigrator.main()] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-11 23:41:35.216 [com.crimemanagement.util.DataMigrator.main()] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-11 23:42:39.132 [com.crimemanagement.util.FetchAllData.main()] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-11 23:42:39.212 [com.crimemanagement.util.FetchAllData.main()] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully

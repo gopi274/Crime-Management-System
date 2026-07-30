@@ -1,0 +1,76 @@
+2025-11-05 10:10:27.817 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-05 10:10:27.879 [AWT-EventQueue-0] WARN  c.c.util.DatabaseConnection - Primary database unreachable or misconfigured. Attempting embedded H2 fallback.
+2025-11-05 10:10:27.964 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Embedded H2 database started and reachable (fallback).
+2025-11-05 10:10:27.972 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized using embedded H2 fallback.
+2025-11-05 10:10:27.973 [AWT-EventQueue-0] DEBUG c.c.util.DatabaseConnection - Converted ENUM types to VARCHAR in SQL resource 'schema.sql'. Transformed length: 5326 -> 4942
+2025-11-05 10:10:28.089 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=1
+2025-11-05 10:10:28.093 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table FIRS contains all expected columns.
+2025-11-05 10:10:28.093 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table CASES contains all expected columns.
+2025-11-05 10:10:28.093 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Schema and sample data loaded into embedded H2 database.
+2025-11-05 10:14:35.751 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-05 10:14:35.805 [AWT-EventQueue-0] WARN  c.c.util.DatabaseConnection - Primary database unreachable or misconfigured. Attempting embedded H2 fallback.
+2025-11-05 10:14:35.861 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Embedded H2 database started and reachable (fallback).
+2025-11-05 10:14:35.870 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized using embedded H2 fallback.
+2025-11-05 10:14:35.871 [AWT-EventQueue-0] DEBUG c.c.util.DatabaseConnection - Converted ENUM types to VARCHAR in SQL resource 'schema.sql'. Transformed length: 5326 -> 4942
+2025-11-05 10:14:35.975 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=1
+2025-11-05 10:14:35.978 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table FIRS contains all expected columns.
+2025-11-05 10:14:35.978 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table CASES contains all expected columns.
+2025-11-05 10:14:35.978 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Schema and sample data loaded into embedded H2 database.
+2025-11-05 10:21:56.494 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-05 10:21:56.546 [AWT-EventQueue-0] WARN  c.c.util.DatabaseConnection - Primary database unreachable or misconfigured. Attempting embedded H2 fallback.
+2025-11-05 10:21:56.600 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Embedded H2 database started and reachable (fallback).
+2025-11-05 10:21:56.608 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized using embedded H2 fallback.
+2025-11-05 10:21:56.610 [AWT-EventQueue-0] DEBUG c.c.util.DatabaseConnection - Converted ENUM types to VARCHAR in SQL resource 'schema.sql'. Transformed length: 5326 -> 4942
+2025-11-05 10:21:56.715 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=1
+2025-11-05 10:21:56.718 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table FIRS contains all expected columns.
+2025-11-05 10:21:56.718 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table CASES contains all expected columns.
+2025-11-05 10:21:56.718 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Schema and sample data loaded into embedded H2 database.
+2025-11-05 10:24:24.218 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-05 10:24:24.267 [AWT-EventQueue-0] WARN  c.c.util.DatabaseConnection - Primary database unreachable or misconfigured. Attempting embedded H2 fallback.
+2025-11-05 10:24:24.417 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Embedded H2 database started and reachable (fallback).
+2025-11-05 10:24:24.463 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized using embedded H2 fallback.
+2025-11-05 10:24:24.470 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Existing database found, skipping schema initialization.
+2025-11-05 10:25:49.297 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-05 10:25:49.342 [AWT-EventQueue-0] WARN  c.c.util.DatabaseConnection - Primary database unreachable or misconfigured. Attempting embedded H2 fallback.
+2025-11-05 10:25:49.389 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Embedded H2 database started and reachable (fallback).
+2025-11-05 10:25:49.396 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized using embedded H2 fallback.
+2025-11-05 10:25:49.398 [AWT-EventQueue-0] DEBUG c.c.util.DatabaseConnection - Converted ENUM types to VARCHAR in SQL resource 'schema.sql'. Transformed length: 5326 -> 4942
+2025-11-05 10:25:49.500 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=1
+2025-11-05 10:25:49.502 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table FIRS contains all expected columns.
+2025-11-05 10:25:49.503 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table CASES contains all expected columns.
+2025-11-05 10:25:49.503 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Schema and sample data loaded into embedded H2 database.
+2025-11-05 10:36:25.614 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-05 10:36:25.670 [AWT-EventQueue-0] WARN  c.c.util.DatabaseConnection - Primary database unreachable or misconfigured. Attempting embedded H2 fallback.
+2025-11-05 10:36:25.819 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Embedded H2 database started and reachable (fallback).
+2025-11-05 10:36:25.864 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized using embedded H2 fallback.
+2025-11-05 10:36:25.869 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database is new or tables missing, initializing schema...
+2025-11-05 10:36:25.870 [AWT-EventQueue-0] DEBUG c.c.util.DatabaseConnection - Converted ENUM types to VARCHAR in SQL resource 'schema.sql'. Transformed length: 5326 -> 4942
+2025-11-05 10:36:25.967 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Re-hashed password for user_id=1
+2025-11-05 10:36:25.970 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table FIRS contains all expected columns.
+2025-11-05 10:36:25.970 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Table CASES contains all expected columns.
+2025-11-05 10:36:25.970 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Schema and sample data loaded into embedded H2 database.
+2025-11-05 12:32:47.444 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-05 12:32:47.501 [AWT-EventQueue-0] WARN  c.c.util.DatabaseConnection - Primary database unreachable or misconfigured. Attempting embedded H2 fallback.
+2025-11-05 12:32:47.674 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Embedded H2 database started and reachable (fallback).
+2025-11-05 12:32:47.722 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized using embedded H2 fallback.
+2025-11-05 12:32:47.727 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database tables already exist, skipping schema initialization.
+2025-11-05 12:33:34.528 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.SuspectDAO - Suspect updated with ID: 1
+2025-11-05 12:34:16.444 [SwingWorker-pool-1-thread-1] INFO  com.crimemanagement.dao.OfficerDAO - Officer created with ID: 6
+2025-11-05 12:37:00.027 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-05 12:37:00.079 [AWT-EventQueue-0] WARN  c.c.util.DatabaseConnection - Primary database unreachable or misconfigured. Attempting embedded H2 fallback.
+2025-11-05 12:37:00.236 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Embedded H2 database started and reachable (fallback).
+2025-11-05 12:37:00.280 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized using embedded H2 fallback.
+2025-11-05 12:37:00.284 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database tables already exist, skipping schema initialization.
+2025-11-05 12:43:13.201 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-05 12:43:13.241 [AWT-EventQueue-0] WARN  c.c.util.DatabaseConnection - Primary database unreachable or misconfigured. Attempting embedded H2 fallback.
+2025-11-05 12:43:13.394 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Embedded H2 database started and reachable (fallback).
+2025-11-05 12:43:13.437 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized using embedded H2 fallback.
+2025-11-05 12:43:13.442 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database tables already exist, skipping schema initialization.
+2025-11-05 13:03:16.405 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m32s838ms).
+2025-11-05 13:06:49.315 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m32s910ms).
+2025-11-05 13:48:37.573 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=41m48s258ms).
+2025-11-05 13:56:26.370 [SwingWorker-pool-1-thread-7] INFO  com.crimemanagement.dao.OfficerDAO - Officer created with ID: 7
+2025-11-05 13:57:43.406 [SwingWorker-pool-1-thread-2] INFO  com.crimemanagement.dao.OfficerDAO - Officer deleted with ID: 5
+2025-11-05 13:59:49.820 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CriminalDAO - Criminal created with ID: 6
+2025-11-05 14:01:59.016 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.SuspectDAO - Suspect created with ID: 7
+2025-11-05 14:02:04.197 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.SuspectDAO - Suspect deleted with ID: 7

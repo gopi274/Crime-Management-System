@@ -1,0 +1,190 @@
+CRIME RECORD MANAGEMENT SYSTEM (KERALA POLICE ERP)
+DATABASE SCHEMA REPORT - ER DIAGRAM SPECIFICATIONS
+Date: 2026-04-10
+
+================================================================================
+RELATIONAL SCHEMA: 22 TABLES WITH CONNECTIONS
+================================================================================
+
+1. police_stations
+   - Attributes: station_id (PK), name, city, state, max_inspectors, max_total_strength, created_at
+   - Usage: Organizational foundation defining departmental hierarchy.
+   - Connections:
+     - 1:N with 'officers' (station_id)
+     - 1:N with 'complaints' (matched_station_id)
+     - 1:N with 'firs' (station_id)
+
+2. courts
+   - Attributes: court_id (PK), name, city, state, jurisdiction_level
+   - Usage: Judicial entity registry for trial tracking.
+   - Connections:
+     - 1:N with 'users' (court_id)
+     - 1:N with 'cases' (court_id)
+
+3. jails
+   - Attributes: jail_id (PK), name, type, location, capacity, occupancy, security_level, block_count, created_at
+   - Usage: Prison management and inmate capacity registry.
+   - Connections:
+     - 1:N with 'users' (jail_id)
+     - 1:N with 'jail_inmates' (jail_id)
+
+4. forensic_labs
+   - Attributes: lab_id (PK), name, type, facility_type, location, specialization, parent_lab_id (FK)
+   - Usage: Registry for forensic analysis centers.
+   - Connections:
+     - Reflexive N:1 with itself (parent_lab_id)
+     - 1:N with 'forensic_scientists' (lab_id)
+     - 1:N with 'evidence' (lab_id)
+
+5. legal_sections
+   - Attributes: section_id (PK), code, title, description, category, is_active, created_at
+   - Usage: Dictionary for IPC/BNS criminal codes.
+   - Connections: Standalone Lookup Table (linked via logic to crime_type strings in FIRs).
+
+6. system_settings
+   - Attributes: setting_id (PK), setting_key, setting_value, description, updated_at
+   - Usage: ERP application configuration.
+   - Connections: Global Configuration (Standalone).
+
+7. citizens
+   - Attributes: citizen_id (PK), name, phone, address, is_anonymous, access_key, created_at
+   - Usage: Public portal user registration.
+   - Connections:
+     - 1:N with 'users' (citizen_id)
+     - 1:N with 'complaints' (citizen_id)
+     - 1:N with 'firs' (citizen_id)
+
+8. officers
+   - Attributes: officer_id (PK), badge_number, first_name, last_name, rank, salary, leave_balance, station_id (FK), jurisdiction_level, phone_nr, email, wing, date_joining
+   - Usage: Personnel records for force management.
+   - Connections:
+     - N:1 with 'police_stations' (station_id)
+     - 1:N with 'users' (officer_id)
+     - 1:N with 'leave_requests' (officer_id, approved_by)
+     - 1:N with 'complaints' (assigned_officer_id)
+     - 1:N with 'firs' (assigned_officer_id)
+     - 1:N with 'cases' (assigned_officer_id)
+     - 1:N with 'evidence' (collected_by)
+     - 1:N with 'case_updates' (officer_id)
+
+9. leave_requests
+   - Attributes: leave_id (PK), officer_id (FK), leave_type, start_date, end_date, reason, status, approved_by (FK)
+   - Usage: HR module for tracking staff availability.
+   - Connections:
+     - N:1 with 'officers' (officer_id)
+     - N:1 with 'officers' (approved_by)
+
+10. forensic_scientists
+    - Attributes: scientist_id (PK), lab_id (FK), first_name, last_name, specialization, rank, created_at
+    - Usage: Profiles of scientific analysts.
+    - Connections:
+      - N:1 with 'forensic_labs' (lab_id)
+      - 1:N with 'users' (scientist_id)
+      - 1:N with 'evidence' (scientist_id)
+      - 1:N with 'forensic_reports' (scientist_id)
+
+11. criminals
+    - Attributes: criminal_id (PK), first_name, last_name, alias, dob, gender, address, phone, record, height, weight, marks, native_place
+    - Usage: Master offender database.
+    - Connections:
+      - 1:N with 'suspects' (criminal_id)
+      - 1:N with 'jail_inmates' (criminal_id)
+
+12. users
+    - Attributes: user_id (PK), username, password_hash, role, officer_id (FK), citizen_id (FK), jail_id (FK), court_id (FK), scientist_id (FK), is_active
+    - Usage: Central Authentication System.
+    - Connections:
+      - N:1 with 'officers' (officer_id)
+      - N:1 with 'citizens' (citizen_id)
+      - N:1 with 'jails' (jail_id)
+      - N:1 with 'courts' (court_id)
+      - N:1 with 'forensic_scientists' (scientist_id)
+      - 1:N with 'intranet_messages' (sender_id, receiver_id)
+
+13. intranet_messages
+    - Attributes: msg_id (PK), sender_id (FK), receiver_id (FK), body, is_bolo, status, sent_at
+    - Usage: Internal communication and BOLO broadcasts.
+    - Connections:
+      - N:1 with 'users' (sender_id)
+      - N:1 with 'users' (receiver_id)
+
+14. complaints
+    - Attributes: complaint_id (PK), citizen_id (FK), crime_type, description, location, tracking_id, matched_station_id (FK), assigned_officer_id (FK), status
+    - Usage: Initial reported incidents (Pre-FIR).
+    - Connections:
+      - N:1 with 'citizens' (citizen_id)
+      - N:1 with 'police_stations' (matched_station_id)
+      - N:1 with 'officers' (assigned_officer_id)
+
+15. firs
+    - Attributes: fir_id (PK), fir_number, crime_type, description, location, date_incident, date_reported, citizen_id (FK), status, assigned_officer_id (FK), station_id (FK)
+    - Usage: Legal First Information Report.
+    - Connections:
+      - N:1 with 'citizens' (citizen_id)
+      - N:1 with 'officers' (assigned_officer_id)
+      - N:1 with 'police_stations' (station_id)
+      - 1:N with 'cases' (fir_id)
+      - 1:N with 'evidence' (fir_id)
+
+16. cases
+    - Attributes: case_id (PK), case_number, fir_id (FK), title, description, priority, status, assigned_officer_id (FK), court_id (FK), target_date, trial_info, verdict
+    - Usage: Judicial tracking of crimes.
+    - Connections:
+      - N:1 with 'firs' (fir_id)
+      - N:1 with 'officers' (assigned_officer_id)
+      - N:1 with 'courts' (court_id)
+      - 1:N with 'suspects' (case_id)
+      - 1:N with 'jail_inmates' (case_id)
+      - 1:N with 'case_updates' (case_id)
+
+17. audit_logs
+    - Attributes: log_id (PK), actor, action, details, created_at
+    - Usage: Security tracking of sensitive edits.
+    - Connections: Independent security journal (Tracks logic flow).
+
+18. suspects
+    - Attributes: suspect_id (PK), case_id (FK), criminal_id (FK), role, charge, arrest_date, bail_info, disposition
+    - Usage: Junction table for Criminal-to-Case mapping.
+    - Connections:
+      - N:1 with 'cases' (case_id)
+      - N:1 with 'criminals' (criminal_id)
+
+19. jail_inmates
+    - Attributes: inmate_id (PK), jail_id (FK), criminal_id (FK), case_id (FK), admission_date, sentence_period, release_date, status
+    - Usage: Prison population monitoring.
+    - Connections:
+      - N:1 with 'jails' (jail_id)
+      - N:1 with 'criminals' (criminal_id)
+      - N:1 with 'cases' (case_id)
+
+20. evidence
+    - Attributes: evidence_id (PK), fir_id (FK), type, description, location, collected_by (FK), collected_date, storage, lab_id (FK), scientist_id (FK), status, media
+    - Usage: Chain of Custody for forensics.
+    - Connections:
+      - N:1 with 'firs' (fir_id)
+      - N:1 with 'officers' (collected_by)
+      - N:1 with 'forensic_labs' (lab_id)
+      - N:1 with 'forensic_scientists' (scientist_id)
+      - 1:N with 'forensic_reports' (evidence_id)
+
+21. case_updates
+    - Attributes: update_id (PK), case_id (FK), officer_id (FK), update_text, status_at_time, created_at
+    - Usage: Investigation narrative journal.
+    - Connections:
+      - N:1 with 'cases' (case_id)
+      - N:1 with 'officers' (officer_id)
+
+22. forensic_reports
+    - Attributes: report_id (PK), evidence_id (FK), scientist_id (FK), report_text, conclusion, findings, is_final, created_at
+    - Usage: Official results of lab analysis for trials.
+    - Connections:
+      - N:1 with 'evidence' (evidence_id)
+      - N:1 with 'forensic_scientists' (scientist_id)
+
+================================================================================
+ER DIAGRAM NOTES:
+- CORE NUCLEUS: The 'firs' and 'cases' tables connect almost all other modules.
+- PERSONA LINKAGE: The 'users' table is a Polymorphic hub for Officers, Scientists, Citizens, and Jailers.
+- CASCADE RULES: Deleting an FIR cascades to Cases, Evidence, and Suspects.
+================================================================================
+END OF REPORT

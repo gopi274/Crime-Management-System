@@ -1,0 +1,476 @@
+2026-03-12 22:57:04.297 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-12 22:57:04.307 [main] INFO  com.crimemanagement.WebApplication - Starting WebApplication using Java 25 with PID 3502 (/Users/parthip/crime-management-system/target/classes started by parthip in /Users/parthip/crime-management-system)
+2026-03-12 22:57:04.307 [main] DEBUG com.crimemanagement.WebApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-12 22:57:04.307 [main] INFO  com.crimemanagement.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-12 22:57:04.609 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-12 22:57:04.618 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2026-03-12 22:57:04.800 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-12 22:57:04.803 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-12 22:57:04.804 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-12 22:57:04.804 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-12 22:57:04.887 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-12 22:57:04.887 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 558 ms
+2026-03-12 22:57:04.914 [main] DEBUG c.c.config.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-03-12 22:57:05.281 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-12 22:57:05.305 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-03-12 22:57:05.326 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-12 22:57:05.408 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-12 22:57:05.438 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-12 22:57:05.789 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-12 22:57:05.815 [main] DEBUG org.hibernate.SQL - 
+    alter table cases 
+       modify column priority varchar(255) not null
+2026-03-12 22:57:05.849 [main] DEBUG org.hibernate.SQL - 
+    alter table cases 
+       modify column status varchar(255) not null
+2026-03-12 22:57:05.864 [main] DEBUG org.hibernate.SQL - 
+    alter table criminals 
+       modify column gender varchar(255) not null
+2026-03-12 22:57:05.870 [main] DEBUG org.hibernate.SQL - 
+    alter table firs 
+       modify column status varchar(255) not null
+2026-03-12 22:57:05.880 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12 22:57:05.919 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-12 22:57:06.062 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@79486f38, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b364f47, org.springframework.security.web.context.SecurityContextHolderFilter@3435a4e5, org.springframework.security.web.header.HeaderWriterFilter@447630c4, org.springframework.web.filter.CorsFilter@5c8d631, org.springframework.security.web.authentication.logout.LogoutFilter@410f1452, com.crimemanagement.config.JwtRequestFilter@73a8e994, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64d42d3d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24558113, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d42b756, org.springframework.security.web.session.SessionManagementFilter@1f235a0a, org.springframework.security.web.access.ExceptionTranslationFilter@7022fb5c, org.springframework.security.web.access.intercept.AuthorizationFilter@1a06b95]
+2026-03-12 22:57:06.140 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-12 22:57:06.147 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-03-12 22:57:06.151 [main] INFO  com.crimemanagement.WebApplication - Started WebApplication in 1.965 seconds (process running for 2.152)
+2026-03-12 22:58:39.156 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-12 22:59:33.077 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-12 22:59:33.164 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-12 23:00:22.281 [com.crimemanagement.util.AuthDiagnostics.main()] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-12 23:00:22.384 [com.crimemanagement.util.AuthDiagnostics.main()] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-12 23:00:40.915 [com.crimemanagement.util.PasswordFixer.main()] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-12 23:00:41.000 [com.crimemanagement.util.PasswordFixer.main()] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-12 23:02:40.448 [com.crimemanagement.util.AuthDiagnostics.main()] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-12 23:02:40.531 [com.crimemanagement.util.AuthDiagnostics.main()] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-12 23:03:52.006 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-12 23:03:52.091 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-12 23:05:19.336 [SwingWorker-pool-1-thread-8] INFO  com.crimemanagement.dao.OfficerDAO - Officer created with ID: 1
+2026-03-12 23:05:42.261 [SwingWorker-pool-1-thread-4] INFO  c.c.service.SearchService - Search completed for keyword 'james' - Found 1 total results
+2026-03-12 23:08:13.864 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-12 23:08:13.951 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-12 23:09:11.724 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-12 23:09:11.815 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-12 23:10:16.020 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-12 23:10:16.145 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-12 23:11:25.015 [com.crimemanagement.util.AuthDiagnostics.main()] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-12 23:11:25.108 [com.crimemanagement.util.AuthDiagnostics.main()] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-12 23:21:06.542 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-12 23:21:06.642 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-12 23:21:07.963 [SwingWorker-pool-1-thread-1] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.service.DashboardService.getRecentActivity(DashboardService.java:119)
+	at com.crimemanagement.ui.DashboardPanel$1.doInBackground(DashboardPanel.java:96)
+	at com.crimemanagement.ui.DashboardPanel$1.doInBackground(DashboardPanel.java:1)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:21:07.987 [SwingWorker-pool-1-thread-8] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:1)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:21:38.593 [SwingWorker-pool-1-thread-9] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:1)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:21:39.210 [SwingWorker-pool-1-thread-10] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:1)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:21:39.426 [SwingWorker-pool-1-thread-1] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:1)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:30:54.031 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-12 23:30:54.137 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-12 23:30:55.304 [SwingWorker-pool-1-thread-1] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.service.DashboardService.getRecentActivity(DashboardService.java:119)
+	at com.crimemanagement.ui.DashboardPanel$1.doInBackground(DashboardPanel.java:96)
+	at com.crimemanagement.ui.DashboardPanel$1.doInBackground(DashboardPanel.java:86)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:30:55.322 [SwingWorker-pool-1-thread-8] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:32:32.337 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-12 23:32:32.446 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-12 23:32:33.662 [SwingWorker-pool-1-thread-1] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.service.DashboardService.getRecentActivity(DashboardService.java:119)
+	at com.crimemanagement.ui.DashboardPanel$1.doInBackground(DashboardPanel.java:96)
+	at com.crimemanagement.ui.DashboardPanel$1.doInBackground(DashboardPanel.java:86)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:32:33.681 [SwingWorker-pool-1-thread-8] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:33:47.394 [SwingWorker-pool-1-thread-9] INFO  com.crimemanagement.dao.OfficerDAO - Officer created with ID: 2
+2026-03-12 23:33:50.130 [SwingWorker-pool-1-thread-2] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:33:50.564 [SwingWorker-pool-1-thread-1] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:33:50.775 [SwingWorker-pool-1-thread-3] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:33:50.992 [SwingWorker-pool-1-thread-4] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:33:51.363 [SwingWorker-pool-1-thread-5] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:33:51.559 [SwingWorker-pool-1-thread-6] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:33:51.742 [SwingWorker-pool-1-thread-7] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:33:51.962 [SwingWorker-pool-1-thread-8] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:33:52.142 [SwingWorker-pool-1-thread-9] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:33:52.530 [SwingWorker-pool-1-thread-10] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:33:52.725 [SwingWorker-pool-1-thread-2] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:33:52.943 [SwingWorker-pool-1-thread-1] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:33:53.446 [SwingWorker-pool-1-thread-3] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:33:53.660 [SwingWorker-pool-1-thread-4] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-12 23:33:53.859 [SwingWorker-pool-1-thread-5] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)

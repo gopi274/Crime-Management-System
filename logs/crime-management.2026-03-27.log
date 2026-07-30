@@ -1,0 +1,277 @@
+2026-03-27 10:40:06.776 [SmokeTest.main()] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-27 10:40:06.845 [SmokeTest.main()] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-27 10:40:06.869 [SmokeTest.main()] INFO  com.crimemanagement.dao.OfficerDAO - Officer created with ID: 2
+2026-03-27 10:40:06.882 [SmokeTest.main()] INFO  com.crimemanagement.dao.CaseDAO - Case created with ID: 2
+2026-03-27 10:40:29.876 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-27 10:40:29.960 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-27 11:26:10.981 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=44m40s910ms).
+2026-03-27 11:36:28.414 [SwingWorker-pool-1-thread-8] INFO  com.crimemanagement.dao.OfficerDAO - Officer deleted with ID: 2
+2026-03-27 11:37:10.323 [SwingWorker-pool-1-thread-1] INFO  com.crimemanagement.dao.OfficerDAO - Officer created with ID: 3
+2026-03-27 11:42:40.546 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-27 11:42:40.630 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-27 11:42:41.617 [SwingWorker-pool-1-thread-1] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.service.DashboardService.getRecentActivity(DashboardService.java:119)
+	at com.crimemanagement.ui.DashboardPanel$1.doInBackground(DashboardPanel.java:96)
+	at com.crimemanagement.ui.DashboardPanel$1.doInBackground(DashboardPanel.java:86)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-27 11:42:41.631 [SwingWorker-pool-1-thread-8] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-27 11:42:54.784 [SwingWorker-pool-1-thread-9] ERROR c.c.service.AuditService - Error fetching audit logs
+java.sql.SQLSyntaxErrorException: Table 'crime_management.audit_logs' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at com.crimemanagement.service.AuditService.getRecentLogs(AuditService.java:43)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:58)
+	at com.crimemanagement.ui.AuditLogPanel$2.doInBackground(AuditLogPanel.java:55)
+	at java.desktop/javax.swing.SwingWorker$1.call(SwingWorker.java:303)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.desktop/javax.swing.SwingWorker.run(SwingWorker.java:340)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-03-27 11:48:00.438 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-27 11:48:00.524 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-27 11:48:41.623 [SwingWorker-pool-1-thread-2] INFO  com.crimemanagement.dao.CaseDAO - Case updated with ID: 3
+2026-03-27 11:50:23.583 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.SuspectDAO - Suspect updated with ID: 1
+2026-03-27 11:51:30.252 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-27 11:51:30.340 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-27 11:57:10.134 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-27 11:57:10.227 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-27 11:57:32.894 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 14
+2026-03-27 11:57:35.869 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 15
+2026-03-27 11:57:39.841 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 11
+2026-03-27 11:57:43.437 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 13
+2026-03-27 11:57:47.325 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 12
+2026-03-27 11:57:51.158 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 9
+2026-03-27 11:57:54.528 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 8
+2026-03-27 11:57:57.776 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 6
+2026-03-27 11:58:01.334 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 10
+2026-03-27 11:58:04.440 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 7
+2026-03-27 12:06:11.224 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-27 12:06:11.317 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-27 12:06:57.280 [SwingWorker-pool-1-thread-10] INFO  com.crimemanagement.dao.CaseDAO - Case updated with ID: 24
+2026-03-27 12:08:31.777 [SwingWorker-pool-1-thread-4] INFO  com.crimemanagement.dao.CaseDAO - Case updated with ID: 21
+2026-03-27 12:08:35.778 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 22
+2026-03-27 12:08:39.270 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 23
+2026-03-27 12:08:42.279 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 19
+2026-03-27 12:08:45.117 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 20
+2026-03-27 12:08:47.936 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 18
+2026-03-27 12:08:50.711 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 16
+2026-03-27 12:08:54.129 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 17
+2026-03-27 12:17:36.423 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-27 12:17:36.514 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-27 12:19:32.800 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-27 12:19:32.884 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-27 12:54:45.864 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m42s852ms).
+2026-03-27 13:06:52.043 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m6s179ms).
+2026-03-27 21:47:23.045 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-27 21:47:23.243 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-27 21:53:56.744 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-27 21:53:56.851 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-27 22:16:27.498 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-27 22:16:27.510 [main] INFO  com.crimemanagement.WebApplication - Starting WebApplication using Java 25 with PID 7387 (/Users/parthip/crime-management-system/target/classes started by parthip in /Users/parthip/crime-management-system)
+2026-03-27 22:16:27.511 [main] DEBUG com.crimemanagement.WebApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-27 22:16:27.511 [main] INFO  com.crimemanagement.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-27 22:16:27.756 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-27 22:16:27.764 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2026-03-27 22:16:27.926 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-27 22:16:27.929 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-27 22:16:27.930 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-27 22:16:27.930 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-27 22:16:27.969 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-27 22:16:27.969 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 437 ms
+2026-03-27 22:16:27.996 [main] DEBUG c.c.config.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-03-27 22:16:28.241 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-27 22:16:28.268 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-03-27 22:16:28.282 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-27 22:16:28.422 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-27 22:16:28.462 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-27 22:16:28.758 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-27 22:16:28.791 [main] DEBUG org.hibernate.SQL - 
+    alter table cases 
+       modify column priority varchar(255) not null
+2026-03-27 22:16:28.824 [main] DEBUG org.hibernate.SQL - 
+    alter table cases 
+       modify column status varchar(255) not null
+2026-03-27 22:16:28.837 [main] DEBUG org.hibernate.SQL - 
+    alter table complaints 
+       modify column status varchar(255)
+2026-03-27 22:16:28.844 [main] DEBUG org.hibernate.SQL - 
+    alter table courts 
+       modify column jurisdiction_level varchar(255) not null
+2026-03-27 22:16:28.852 [main] DEBUG org.hibernate.SQL - 
+    alter table criminals 
+       modify column gender varchar(255) not null
+2026-03-27 22:16:28.863 [main] DEBUG org.hibernate.SQL - 
+    alter table firs 
+       modify column status varchar(255) not null
+2026-03-27 22:16:28.877 [main] DEBUG org.hibernate.SQL - 
+    alter table leave_requests 
+       modify column status varchar(255)
+2026-03-27 22:16:28.886 [main] DEBUG org.hibernate.SQL - 
+    alter table officers 
+       modify column jurisdiction_level varchar(255)
+2026-03-27 22:16:28.902 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-27 22:16:28.943 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-27 22:16:29.049 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e69bf78, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24d097c8, org.springframework.security.web.context.SecurityContextHolderFilter@548c5127, org.springframework.security.web.header.HeaderWriterFilter@2eb03908, org.springframework.web.filter.CorsFilter@2f69d246, org.springframework.security.web.authentication.logout.LogoutFilter@48a38a12, com.crimemanagement.config.JwtRequestFilter@6ebc9573, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e80de85, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@173b24c4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5bfdc92b, org.springframework.security.web.session.SessionManagementFilter@7612f385, org.springframework.security.web.access.ExceptionTranslationFilter@2b9615cb, org.springframework.security.web.access.intercept.AuthorizationFilter@6e069ca9]
+2026-03-27 22:16:29.124 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-27 22:16:29.130 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-03-27 22:16:29.133 [main] INFO  com.crimemanagement.WebApplication - Started WebApplication in 1.729 seconds (process running for 1.918)
+2026-03-27 22:17:09.953 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-27 22:17:09.953 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-27 22:17:09.954 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-03-27 22:17:09.959 [http-nio-8080-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/public/stats' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-27 22:17:09.970 [http-nio-8080-exec-2] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/public/stories' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-27 22:24:50.245 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-27 22:26:39.017 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-27 22:26:39.027 [main] INFO  com.crimemanagement.WebApplication - Starting WebApplication using Java 25 with PID 7745 (/Users/parthip/crime-management-system/target/classes started by parthip in /Users/parthip/crime-management-system)
+2026-03-27 22:26:39.027 [main] DEBUG com.crimemanagement.WebApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-27 22:26:39.027 [main] INFO  com.crimemanagement.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-27 22:26:39.291 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-27 22:26:39.300 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2026-03-27 22:26:39.469 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-27 22:26:39.471 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-27 22:26:39.472 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-27 22:26:39.472 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-27 22:26:39.492 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-27 22:26:39.492 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 446 ms
+2026-03-27 22:26:39.522 [main] DEBUG c.c.config.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-03-27 22:26:39.770 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-27 22:26:39.794 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-03-27 22:26:39.810 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-27 22:26:39.891 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-27 22:26:39.921 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-27 22:26:40.249 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-27 22:26:40.272 [main] DEBUG org.hibernate.SQL - 
+    alter table cases 
+       modify column priority varchar(255) not null
+2026-03-27 22:26:40.309 [main] DEBUG org.hibernate.SQL - 
+    alter table cases 
+       modify column status varchar(255) not null
+2026-03-27 22:26:40.327 [main] DEBUG org.hibernate.SQL - 
+    alter table complaints 
+       modify column status varchar(255)
+2026-03-27 22:26:40.334 [main] DEBUG org.hibernate.SQL - 
+    alter table courts 
+       modify column jurisdiction_level varchar(255) not null
+2026-03-27 22:26:40.340 [main] DEBUG org.hibernate.SQL - 
+    alter table criminals 
+       modify column gender varchar(255) not null
+2026-03-27 22:26:40.346 [main] DEBUG org.hibernate.SQL - 
+    alter table firs 
+       modify column status varchar(255) not null
+2026-03-27 22:26:40.357 [main] DEBUG org.hibernate.SQL - 
+    alter table leave_requests 
+       modify column status varchar(255)
+2026-03-27 22:26:40.364 [main] DEBUG org.hibernate.SQL - 
+    alter table officers 
+       modify column jurisdiction_level varchar(255)
+2026-03-27 22:26:40.377 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-27 22:26:40.413 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-27 22:26:40.515 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@23eb6d13, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48a38a12, org.springframework.security.web.context.SecurityContextHolderFilter@1e49a77e, org.springframework.security.web.header.HeaderWriterFilter@19b0a9f2, org.springframework.web.filter.CorsFilter@2aa65672, org.springframework.security.web.authentication.logout.LogoutFilter@426bf2f2, com.crimemanagement.config.JwtRequestFilter@16aed49f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7891742e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2bbaf983, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e96489b, org.springframework.security.web.session.SessionManagementFilter@1aea759d, org.springframework.security.web.access.ExceptionTranslationFilter@1248f83, org.springframework.security.web.access.intercept.AuthorizationFilter@7a22302c]
+2026-03-27 22:26:40.591 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-27 22:26:40.596 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-03-27 22:26:40.600 [main] INFO  com.crimemanagement.WebApplication - Started WebApplication in 1.681 seconds (process running for 1.848)
+2026-03-27 22:26:52.501 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-27 22:26:52.501 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-27 22:26:52.502 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-03-27 22:26:52.507 [http-nio-8080-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/public/stats' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-27 22:26:52.519 [http-nio-8080-exec-2] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/public/stories' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-27 22:26:52.553 [http-nio-8080-exec-1] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-27 22:26:52.564 [http-nio-8080-exec-1] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-27 22:31:05.911 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-27 22:32:02.194 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-03-27 22:32:02.207 [main] INFO  com.crimemanagement.WebApplication - Starting WebApplication using Java 25 with PID 7936 (/Users/parthip/crime-management-system/target/classes started by parthip in /Users/parthip/crime-management-system)
+2026-03-27 22:32:02.208 [main] DEBUG com.crimemanagement.WebApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-27 22:32:02.208 [main] INFO  com.crimemanagement.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-27 22:32:02.464 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-27 22:32:02.472 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2026-03-27 22:32:02.656 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-27 22:32:02.659 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-27 22:32:02.660 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-27 22:32:02.660 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-27 22:32:02.682 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-27 22:32:02.682 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 456 ms
+2026-03-27 22:32:02.711 [main] DEBUG c.c.config.JwtRequestFilter - Filter 'jwtRequestFilter' configured for use
+2026-03-27 22:32:02.984 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-27 22:32:03.007 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-03-27 22:32:03.023 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-27 22:32:03.107 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-27 22:32:03.137 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-27 22:32:03.469 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-27 22:32:03.496 [main] DEBUG org.hibernate.SQL - 
+    alter table cases 
+       modify column priority varchar(255) not null
+2026-03-27 22:32:03.530 [main] DEBUG org.hibernate.SQL - 
+    alter table cases 
+       modify column status varchar(255) not null
+2026-03-27 22:32:03.541 [main] DEBUG org.hibernate.SQL - 
+    alter table complaints 
+       modify column status varchar(255)
+2026-03-27 22:32:03.549 [main] DEBUG org.hibernate.SQL - 
+    alter table courts 
+       modify column jurisdiction_level varchar(255) not null
+2026-03-27 22:32:03.556 [main] DEBUG org.hibernate.SQL - 
+    alter table criminals 
+       modify column gender varchar(255) not null
+2026-03-27 22:32:03.567 [main] DEBUG org.hibernate.SQL - 
+    alter table firs 
+       modify column status varchar(255) not null
+2026-03-27 22:32:03.581 [main] DEBUG org.hibernate.SQL - 
+    alter table leave_requests 
+       modify column status varchar(255)
+2026-03-27 22:32:03.590 [main] DEBUG org.hibernate.SQL - 
+    alter table officers 
+       modify column jurisdiction_level varchar(255)
+2026-03-27 22:32:03.604 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-27 22:32:03.640 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-27 22:32:03.751 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f12676, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f348e10, org.springframework.security.web.context.SecurityContextHolderFilter@20a46227, org.springframework.security.web.header.HeaderWriterFilter@5ab06829, org.springframework.web.filter.CorsFilter@3f22ce2a, org.springframework.security.web.authentication.logout.LogoutFilter@13346a64, com.crimemanagement.config.JwtRequestFilter@6c479fdf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f39ad3f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7524125c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64cec4d0, org.springframework.security.web.session.SessionManagementFilter@357e7113, org.springframework.security.web.access.ExceptionTranslationFilter@549debdb, org.springframework.security.web.access.intercept.AuthorizationFilter@3986b9e9]
+2026-03-27 22:32:03.826 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-27 22:32:03.833 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-03-27 22:32:03.837 [main] INFO  com.crimemanagement.WebApplication - Started WebApplication in 1.746 seconds (process running for 1.931)
+2026-03-27 22:32:09.927 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-27 22:32:09.927 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-27 22:32:09.929 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-03-27 22:32:09.934 [http-nio-8080-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/public/track/TRACK-1774630663042' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-27 22:32:09.946 [http-nio-8080-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/public/track/TRACK-1774630663042' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-03-27 22:32:09.972 [http-nio-8080-exec-1] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-27 22:32:10.031 [http-nio-8080-exec-1] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-27 22:52:49.565 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-27 23:06:50.103 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-27 23:06:50.219 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-27 23:13:53.451 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-27 23:13:53.559 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2026-03-27 23:23:08.886 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2026-03-27 23:23:08.985 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully

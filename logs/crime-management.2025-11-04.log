@@ -1,0 +1,64 @@
+2025-11-04 17:11:25.395 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 17:11:25.493 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 17:13:51.155 [SwingWorker-pool-2-thread-7] INFO  com.crimemanagement.dao.OfficerDAO - Officer created with ID: 6
+2025-11-04 17:14:07.284 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CriminalDAO - Criminal created with ID: 8
+2025-11-04 17:15:25.820 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case created with ID: 8
+2025-11-04 17:19:12.393 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 17:19:12.477 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 17:20:22.023 [SwingWorker-pool-1-thread-3] INFO  com.crimemanagement.dao.OfficerDAO - Officer deleted with ID: 4
+2025-11-04 17:20:27.397 [SwingWorker-pool-1-thread-5] INFO  com.crimemanagement.dao.OfficerDAO - Officer deleted with ID: 5
+2025-11-04 17:20:30.513 [SwingWorker-pool-1-thread-8] INFO  com.crimemanagement.dao.OfficerDAO - Officer deleted with ID: 6
+2025-11-04 17:20:35.832 [SwingWorker-pool-1-thread-9] INFO  com.crimemanagement.dao.OfficerDAO - Officer deleted with ID: 3
+2025-11-04 17:21:41.134 [SwingWorker-pool-1-thread-1] INFO  com.crimemanagement.dao.OfficerDAO - Officer created with ID: 7
+2025-11-04 17:22:48.314 [SwingWorker-pool-1-thread-3] INFO  com.crimemanagement.dao.OfficerDAO - Officer created with ID: 8
+2025-11-04 17:25:09.597 [SwingWorker-pool-1-thread-5] INFO  com.crimemanagement.dao.OfficerDAO - Officer created with ID: 9
+2025-11-04 17:25:18.733 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CriminalDAO - Criminal deleted with ID: 8
+2025-11-04 17:25:23.564 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CriminalDAO - Criminal deleted with ID: 7
+2025-11-04 17:25:26.479 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CriminalDAO - Criminal deleted with ID: 6
+2025-11-04 17:25:33.830 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.FIRDAO - FIR deleted with ID: 6
+2025-11-04 17:25:36.114 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.FIRDAO - FIR deleted with ID: 8
+2025-11-04 17:30:08.651 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 17:30:08.734 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 17:35:32.758 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 17:35:32.851 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 17:39:18.920 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 17:39:19.002 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 17:56:00.140 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m40s951ms).
+2025-11-04 18:00:43.636 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m43s496ms).
+2025-11-04 18:04:43.887 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m251ms).
+2025-11-04 18:11:45.357 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 18:11:45.441 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 18:11:58.621 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m14s734ms).
+2025-11-04 18:13:35.841 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case created with ID: 10
+2025-11-04 18:20:26.731 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 18:20:26.818 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 18:25:19.680 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 18:25:19.763 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 18:27:45.139 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CriminalDAO - Criminal created with ID: 9
+2025-11-04 18:36:56.303 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 18:36:56.385 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 18:41:25.944 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 18:41:26.027 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 18:45:27.827 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 18:45:27.908 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 18:48:39.026 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 18:48:39.121 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 18:52:32.803 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 18:52:32.885 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 18:56:20.847 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 18:56:20.927 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 18:58:45.329 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 18:58:45.413 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 19:03:53.227 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 19:03:53.308 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 19:06:33.692 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 19:06:33.772 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 19:11:21.982 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 19:11:22.079 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 19:27:17.251 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 19:27:17.361 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 19:28:33.023 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.SuspectDAO - Suspect created with ID: 7
+2025-11-04 19:36:46.702 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 19:36:46.787 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-11-04 22:02:44.279 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-11-04 22:02:44.373 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully

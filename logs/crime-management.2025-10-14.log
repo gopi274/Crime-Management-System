@@ -1,0 +1,8 @@
+2025-10-14 00:21:16.650 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-10-14 00:21:16.742 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-10-14 00:21:35.195 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CriminalDAO - Criminal created with ID: 6
+2025-10-14 22:47:53.625 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-10-14 22:47:53.772 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-10-14 23:00:16.345 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database properties loaded successfully
+2025-10-14 23:00:16.436 [AWT-EventQueue-0] INFO  c.c.util.DatabaseConnection - Database connection pool initialized successfully
+2025-10-14 23:04:48.430 [AWT-EventQueue-0] INFO  com.crimemanagement.dao.CaseDAO - Case deleted with ID: 2
